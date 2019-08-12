@@ -49,3 +49,46 @@ section {
 .text p {
     font-size: 18px;
 }
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contenedor>div {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    background: plum;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor>div>img {
+    display: block;
+    width: 23%;
+    height: 80%;
+    margin: 3px 1%;
+    border: 2px solid red;
+    opacity: .5;
+}
+
+.contenedor>div>img:hover {
+    opacity: 1;
+}
+
+footer {
+    clear: both;
+    background: peru;
+    height: 5vh;
+}
+
+footer p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
