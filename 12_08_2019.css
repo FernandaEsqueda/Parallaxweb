@@ -6,6 +6,7 @@ body {
 }
 
 .info {
+    background: transparent;
     color: aliceblue;
     width: 100%;
     height: 50px;
@@ -44,11 +45,13 @@ body {
 .circulo {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
+    font-size: auto;
     width: 90px;
     height: 90px;
-    -webkit-border-radius: 45px 45px 45px 45px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
     position: absolute;
-    text-align: center;
+    text-align: center center;
     top: 10px;
     left: 47%;
     right: 50%;
@@ -111,7 +114,7 @@ section {
     height: 100%;
 }
 
-.contenedor>div {
+.contenedor>span {
     width: 90%;
     height: 40%;
     display: flex;
@@ -120,17 +123,109 @@ section {
     justify-content: space-around;
 }
 
-.contenedor>div>img {
+.contenedor>span>img {
     display: block;
-    width: 23%;
+    width: 30%;
     height: 80%;
     margin: 3px 1%;
     border: 2px solid red;
-    opacity: .5;
 }
 
-.contenedor>div>img:hover {
-    opacity: 1;
+.contenedor>span>img:hover {
+    opacity: .3;
+}
+
+legend {
+    text-align: center;
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+input[type=search],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=search]:hover {
+    background-color: #F3F3F3;
+    color: black;
+    transition: linear;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email]:hover {
+    background-color: #F3F3F3;
+    color: black;
+    transition: linear;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=tel]:hover {
+    background-color: #F3F3F3;
+    color: black;
+    transition: linear;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #F3F3F3;
+    color: black;
+    transition: .5s linear;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea:hover {
+    background-color: #F3F3F3;
+    color: black;
+    transition: linear;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 footer {
